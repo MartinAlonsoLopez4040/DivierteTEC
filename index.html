@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101c2d" />
+    <meta name="description" content="DivierteTEC: descubre juegos y proyectos creativos de cualquier categoría." />
+    <title>DivierteTEC · Juegos y proyectos</title>
+  </head>
+  <body>
+    <div class="app-shell" id="app-shell" data-menu-open="false">
+      <header class="topbar">
+        <button class="menu-toggle icon-button" id="menu-toggle" type="button" aria-label="Mostrar categorías" aria-expanded="false" aria-controls="sidebar">
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <a class="brand" href="#inicio" data-section="inicio" aria-label="DivierteTEC, ir al inicio">
+          <span class="brand-symbol" aria-hidden="true">D<span>·</span></span>
+          <span class="brand-name">Divierte<span>TEC</span></span>
+        </a>
+        <nav class="top-nav" id="top-nav" aria-label="Apartados principales"></nav>
+        <span class="header-tag">Juegos + Proyectos</span>
+      </header>
+
+      <div class="app-layout">
+        <aside class="sidebar" id="sidebar" aria-label="Categorías">
+          <div class="sidebar-heading">
+            <span class="label-small">Explorar</span>
+            <h2>Categorías</h2>
+          </div>
+          <nav class="category-nav" id="category-nav" aria-label="Categorías de proyectos"></nav>
+          <div class="sidebar-note">
+            <span class="note-dot" aria-hidden="true"></span>
+            <p>Descubre propuestas recreativas y creaciones de distintas categorías.</p>
+          </div>
+        </aside>
+        <button class="menu-scrim" id="menu-scrim" type="button" aria-label="Cerrar categorías"></button>
+
+        <main class="main-content" id="main-content" tabindex="-1">
+          <div class="content-wrap">
+            <div class="breadcrumbs"><span>DIVIERTETEC</span><span aria-hidden="true">/</span><span id="breadcrumb-current">Inicio</span></div>
+            <div id="page-content" aria-live="polite"></div>
+            <footer class="footer"><span>DivierteTEC</span><span>Diseñado para seguir creciendo.</span></footer>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
